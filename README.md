@@ -4,13 +4,6 @@ A web-based project designed to bridge the gap between Data Analytics and Web De
 
 ---
 
-## 🚀 Project Overview
-
-The objective of this project is to create a user-friendly web platform that allows users to interact with data, visualize insights, and access analytical reports through a responsive web application.
-
-The project showcases how web development skills can complement data analytics by making business insights more accessible and interactive.
-
----
 
 ## ✨ Features
 
@@ -33,20 +26,6 @@ The project showcases how web development skills can complement data analytics b
 * CSS3
 * JavaScript
 
-### Backend (Optional)
-
-* Python
-* FastAPI
-
-### Data Handling
-
-* Pandas
-* Excel / CSV Datasets
-
-### Database (Optional)
-
-* MySQL
-* SQLite
 
 ---
 
