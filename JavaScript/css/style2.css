@@ -1,0 +1,342 @@
+/* Reset & Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
+    padding: 3.5rem 2rem;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+header .header-content {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+/* Notification Banner */
+.notification {
+    background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.notification p {
+    margin: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem;
+}
+
+/* Sections */
+section {
+    background: #fff;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-top: 5px solid #2a5298;
+    position: relative;
+}
+
+section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.buy-cars {
+    border-top-color: #667eea;
+}
+
+.buy-cars:hover {
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.25);
+}
+
+.sell-cars {
+    border-top-color: #764ba2;
+}
+
+.sell-cars:hover {
+    box-shadow: 0 15px 40px rgba(118, 75, 162, 0.25);
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+section h2 {
+    margin-bottom: 1.2rem;
+    color: #1e3c72;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+section p {
+    margin-bottom: 1.8rem;
+    color: #666;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Buttons / Links */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 1.05rem;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #5568d3 100%);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #5568d3 0%, #445ab8 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.btn-secondary {
+    background: linear-gradient(135deg, #764ba2 0%, #653a8c 100%);
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(135deg, #653a8c 0%, #542a76 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(118, 75, 162, 0.3);
+}
+
+/* Special Sections */
+.special-section {
+    background: white;
+    width: 90%;
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #667eea;
+}
+
+.special-section h3 {
+    color: #667eea;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.special-section ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.special-section li {
+    color: #666;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border-left: 4px solid #764ba2;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.special-section li:hover {
+    background: #f0f0f0;
+    transform: translateX(5px);
+}
+
+/* Special Box */
+#special {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 2.5rem;
+    margin: 2rem auto;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.25);
+}
+
+#special p {
+    margin: 0;
+}
+
+/* Floating Button */
+.floating-btn {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: linear-gradient(135deg, #f74c6a 0%, #f32c5c 100%);
+    color: white;
+    border: none;
+    padding: 1.2rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(247, 76, 106, 0.3);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.floating-btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 12px 35px rgba(247, 76, 106, 0.4);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        margin: 2rem auto;
+    }
+
+    section {
+        padding: 2rem 1.5rem;
+    }
+
+    section h2 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.95rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .special-section {
+        padding: 1.5rem;
+    }
+
+    .special-section ul {
+        grid-template-columns: 1fr;
+    }
+
+    #special {
+        padding: 2rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .floating-btn {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 1rem 1.2rem;
+        font-size: 1rem;
+    }
+}
+
+border: 1px solid #ffeeba;
+}
+
+#special {
+    background: #e3f2fd;
+    color: #0d47a1;
+    padding: 25px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 12px;
+    border: 1px solid #bbdefb;
+    font-weight: 500;
+}
+
+.message {
+    display: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .message {
+        display: block;
+        background-color: red;
+        color: white;
+        text-align: center;
+        padding: 10px;
+    }
+}
